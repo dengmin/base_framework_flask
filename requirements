@@ -1,0 +1,13 @@
+flask==0.9
+SQLAlchemy==0.7.9
+flask-principal==0.3.3
+flask-script==0.5.1
+flask-sqlalchemy==0.16
+flask-uploads==0.13
+jinjia2==2.6
+mysqldb
+werkzeug==0.8.3
+wtforms=1.0.2
+blinker==1.2
+argparse==1.2.1
+
