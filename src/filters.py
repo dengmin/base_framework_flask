@@ -70,13 +70,13 @@ def error_handers(app):
     def unauthorized(error):
         if request.is_xhr:
             return jsonify(success=False, error=u"请先登录", login=True, next=request.url)
-        return render_template('error/401.html',error=error)
+        return render_template('errors/401.html',error=error)
 
     @app.errorhandler(403)
     def forbidden(error):
         if request.is_xhr:
             return jsonify(success=False,error=error)
-        return render_template('error/403.html',error=error)
+        return render_template('errors/403.html',error=error)
 
     @app.errorhandler(404)
     def page_not_found(error):

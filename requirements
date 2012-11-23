@@ -4,6 +4,7 @@ flask-principal==0.3.3
 flask-script==0.5.1
 flask-sqlalchemy==0.16
 flask-uploads==0.13
+flask-wtf
 jinjia2==2.6
 mysql-python
 werkzeug==0.8.3

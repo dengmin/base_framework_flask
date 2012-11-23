@@ -1,13 +1,14 @@
 #! /usr/bin/env python
 #coding=utf-8
 
-from flask import Flask,render_template,g,request,jsonify,url_for,Markup,g
+from flask import Flask,render_template,g,request,jsonify,url_for,Markup,g,_app_ctx_stack
 from werkzeug.exceptions import default_exceptions
 from flaskext.uploads import configure_uploads,UploadSet, IMAGES,DEFAULTS
 from src.apps.front import views as front
 from src.apps.account import views as account
 from src.apps.dashboard import views as admin
-from flask_principal import Principal,identity_loaded
+from src.apps.account.models import User
+from flask_principal import Principal,identity_loaded,RoleNeed, UserNeed
 
 from . import database
 from .utils import import_object
@@ -35,6 +36,8 @@ def create_app(config=None):
 	if config:
 		app.config.from_pyfile(config)
 
+	config_identity(app)
+
 	config_before_after_request(app)
 	
 	#config error handlers
@@ -47,15 +50,14 @@ def create_app(config=None):
 	#config ext
 	config_ext(app)
 
-	#register blueprint
-	register_blueprint(app,blueprints)
-	import_models()
-	config_identity(app)
-
 	database.db.init_app(app)
 	database.db.app = app
 
 	config_logging(app)
+
+	#register blueprint
+	register_blueprint(app,blueprints)
+	import_models()
 
 	return app
 
@@ -64,15 +66,14 @@ def config_identity(app):
 	principal = Principal(app)
 
 	@identity_loaded.connect_via(app)
-	def permissionHandler(sender,identity):
-		pass
+	def _on_identity_loaded(sender,identity):
+		g.user = User.query.from_identity(identity)
 
 def config_before_after_request(app):
 
 	@app.before_request
 	def authenticate():
-		pass
-		#g.user = getattr(g.identity, 'user', None)
+		g.user = getattr(g.identity, 'user', None)
 
 	@app.after_request
 	def after_request(response):
@@ -92,7 +93,11 @@ def register_context_processor(app):
 	
 	@app.context_processor
 	def dated_url_for():
-		return dict(dated_url_for=url_for_timestamp)
+		return dict(url_for=url_for_timestamp)
+
+	@app.context_processor
+	def config():
+		return dict(config=app.config)
 
 def config_ext(app):
 	images = UploadSet('images',IMAGES)

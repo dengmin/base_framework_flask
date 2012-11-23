@@ -10,7 +10,7 @@ manager = Manager(create_app('settings.py'))
 
 @manager.shell
 def make_shell_context():
-	return dict()
+	return dict(db=db)
 
 manager.add_command('runserver',Server(host="0.0.0.0", port=9000))
 

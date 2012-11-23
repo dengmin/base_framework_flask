@@ -1,0 +1,723 @@
+2012-11-23 09:09:34,575 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/utils.py", line 39, in decorator
+    response = f(*args, **kwargs)
+  File "/home/p/base_framework_flask/src/apps/front/views.py", line 12, in index
+    return render_template('index.html',gender='M')
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 894, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/p/base_framework_flask/src/templates/index.html", line 7, in top-level template code
+    <a href="{{url_for('front.index')}}">index</a>
+  File "/home/p/base_framework_flask/src/__init__.py", line 92, in url_for_timestamp
+    return url_for(endpoint, **values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 361, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 354, in url_for
+    force_external=external)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Werkzeug-0.8.3-py2.6.egg/werkzeug/routing.py", line 1607, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('front.index', {}, None)
+2012-11-23 09:10:09,906 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/utils.py", line 40, in decorator
+    response = f(*args, **kwargs)
+  File "/home/p/base_framework_flask/src/apps/front/views.py", line 12, in index
+    return render_template('index.html',gender='M')
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 894, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/p/base_framework_flask/src/templates/index.html", line 7, in top-level template code
+    <a href="{{url_for('front.index')}}">index</a>
+  File "/home/p/base_framework_flask/src/__init__.py", line 92, in url_for_timestamp
+    return url_for(endpoint, **values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 361, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 354, in url_for
+    force_external=external)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Werkzeug-0.8.3-py2.6.egg/werkzeug/routing.py", line 1607, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('front.index', {}, None)
+2012-11-23 09:10:28,127 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/utils.py", line 40, in decorator
+    response = f(*args, **kwargs)
+  File "/home/p/base_framework_flask/src/apps/front/views.py", line 12, in index
+    return render_template('index.html',gender='M')
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 894, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/p/base_framework_flask/src/templates/index.html", line 7, in top-level template code
+    <a href="{{url_for('front.index')}}">index</a>
+  File "/home/p/base_framework_flask/src/__init__.py", line 92, in url_for_timestamp
+    return url_for(endpoint, **values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 361, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 354, in url_for
+    force_external=external)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Werkzeug-0.8.3-py2.6.egg/werkzeug/routing.py", line 1607, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('front.index', {}, None)
+2012-11-23 09:10:33,886 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/utils.py", line 40, in decorator
+    response = f(*args, **kwargs)
+  File "/home/p/base_framework_flask/src/apps/front/views.py", line 12, in index
+    return render_template('index.html',gender='M')
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 894, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/p/base_framework_flask/src/templates/index.html", line 7, in top-level template code
+    <a href="{{url_for('front.index')}}">index</a>
+  File "/home/p/base_framework_flask/src/__init__.py", line 92, in url_for_timestamp
+    return url_for(endpoint, **values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 361, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 354, in url_for
+    force_external=external)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Werkzeug-0.8.3-py2.6.egg/werkzeug/routing.py", line 1607, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('front.index', {}, None)
+2012-11-23 09:10:34,100 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/utils.py", line 40, in decorator
+    response = f(*args, **kwargs)
+  File "/home/p/base_framework_flask/src/apps/front/views.py", line 12, in index
+    return render_template('index.html',gender='M')
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 894, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/p/base_framework_flask/src/templates/index.html", line 7, in top-level template code
+    <a href="{{url_for('front.index')}}">index</a>
+  File "/home/p/base_framework_flask/src/__init__.py", line 92, in url_for_timestamp
+    return url_for(endpoint, **values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 361, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 354, in url_for
+    force_external=external)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Werkzeug-0.8.3-py2.6.egg/werkzeug/routing.py", line 1607, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('front.index', {}, None)
+2012-11-23 09:10:34,316 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/utils.py", line 40, in decorator
+    response = f(*args, **kwargs)
+  File "/home/p/base_framework_flask/src/apps/front/views.py", line 12, in index
+    return render_template('index.html',gender='M')
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 894, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/p/base_framework_flask/src/templates/index.html", line 7, in top-level template code
+    <a href="{{url_for('front.index')}}">index</a>
+  File "/home/p/base_framework_flask/src/__init__.py", line 92, in url_for_timestamp
+    return url_for(endpoint, **values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 361, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 354, in url_for
+    force_external=external)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Werkzeug-0.8.3-py2.6.egg/werkzeug/routing.py", line 1607, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('front.index', {}, None)
+2012-11-23 09:10:48,263 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/utils.py", line 40, in decorator
+    response = f(*args, **kwargs)
+  File "/home/p/base_framework_flask/src/apps/front/views.py", line 12, in index
+    return render_template('index.html',gender='M')
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 894, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/p/base_framework_flask/src/templates/index.html", line 7, in top-level template code
+    <a href="{{url_for('front.index')}}">index</a>
+  File "/home/p/base_framework_flask/src/__init__.py", line 92, in url_for_timestamp
+    return url_for(endpoint, **values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 361, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 354, in url_for
+    force_external=external)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Werkzeug-0.8.3-py2.6.egg/werkzeug/routing.py", line 1607, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('front.index', {}, None)
+2012-11-23 09:11:14,875 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/utils.py", line 41, in decorator
+    response = f(*args, **kwargs)
+  File "/home/p/base_framework_flask/src/apps/front/views.py", line 12, in index
+    return render_template('index.html',gender='M')
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 894, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/p/base_framework_flask/src/templates/index.html", line 7, in top-level template code
+    <a href="{{url_for('front.index')}}">index</a>
+  File "/home/p/base_framework_flask/src/__init__.py", line 92, in url_for_timestamp
+    return url_for(endpoint, **values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 361, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 354, in url_for
+    force_external=external)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Werkzeug-0.8.3-py2.6.egg/werkzeug/routing.py", line 1607, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('front.index', {}, None)
+2012-11-23 09:11:19,537 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/utils.py", line 41, in decorator
+    response = f(*args, **kwargs)
+  File "/home/p/base_framework_flask/src/apps/front/views.py", line 12, in index
+    return render_template('index.html',gender='M')
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 894, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/p/base_framework_flask/src/templates/index.html", line 7, in top-level template code
+    <a href="{{url_for('front.index')}}">index</a>
+  File "/home/p/base_framework_flask/src/__init__.py", line 92, in url_for_timestamp
+    return url_for(endpoint, **values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 361, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 354, in url_for
+    force_external=external)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Werkzeug-0.8.3-py2.6.egg/werkzeug/routing.py", line 1607, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('front.index', {}, None)
+2012-11-23 09:11:35,655 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/utils.py", line 42, in decorator
+    response = f(*args, **kwargs)
+  File "/home/p/base_framework_flask/src/apps/front/views.py", line 12, in index
+    return render_template('index.html',gender='M')
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 894, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/p/base_framework_flask/src/templates/index.html", line 7, in top-level template code
+    <a href="{{url_for('front.index')}}">index</a>
+  File "/home/p/base_framework_flask/src/__init__.py", line 92, in url_for_timestamp
+    return url_for(endpoint, **values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 361, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 354, in url_for
+    force_external=external)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Werkzeug-0.8.3-py2.6.egg/werkzeug/routing.py", line 1607, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('front.index', {}, None)
+2012-11-23 09:12:00,948 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/utils.py", line 42, in decorator
+    response = f(*args, **kwargs)
+  File "/home/p/base_framework_flask/src/apps/front/views.py", line 13, in index
+    return render_template('index.html',gender='M')
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 894, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/p/base_framework_flask/src/templates/index.html", line 7, in top-level template code
+    <a href="{{url_for('front.index')}}">index</a>
+  File "/home/p/base_framework_flask/src/__init__.py", line 92, in url_for_timestamp
+    return url_for(endpoint, **values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 361, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 354, in url_for
+    force_external=external)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Werkzeug-0.8.3-py2.6.egg/werkzeug/routing.py", line 1607, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('front.index', {}, None)
+2012-11-23 09:12:49,657 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/utils.py", line 39, in decorator
+    response = f(*args, **kwargs)
+  File "/home/p/base_framework_flask/src/apps/front/views.py", line 12, in index
+    return render_template('index.html',gender='M')
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 894, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/p/base_framework_flask/src/templates/index.html", line 7, in top-level template code
+    <a href="{{url_for('front.index')}}">index</a>
+  File "/home/p/base_framework_flask/src/__init__.py", line 92, in url_for_timestamp
+    return url_for(endpoint, **values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 361, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 354, in url_for
+    force_external=external)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Werkzeug-0.8.3-py2.6.egg/werkzeug/routing.py", line 1607, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('front.index', {}, None)
+2012-11-23 09:12:51,760 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/utils.py", line 39, in decorator
+    response = f(*args, **kwargs)
+  File "/home/p/base_framework_flask/src/apps/front/views.py", line 12, in index
+    return render_template('index.html',gender='M')
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 894, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/p/base_framework_flask/src/templates/index.html", line 7, in top-level template code
+    <a href="{{url_for('front.index')}}">index</a>
+  File "/home/p/base_framework_flask/src/__init__.py", line 92, in url_for_timestamp
+    return url_for(endpoint, **values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 361, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 354, in url_for
+    force_external=external)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Werkzeug-0.8.3-py2.6.egg/werkzeug/routing.py", line 1607, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('front.index', {}, None)
+2012-11-23 09:12:56,802 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/utils.py", line 39, in decorator
+    response = f(*args, **kwargs)
+  File "/home/p/base_framework_flask/src/apps/front/views.py", line 12, in index
+    return render_template('index.html',gender='M')
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 894, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/p/base_framework_flask/src/templates/index.html", line 7, in top-level template code
+    <a href="{{url_for('front.index')}}">index</a>
+  File "/home/p/base_framework_flask/src/__init__.py", line 92, in url_for_timestamp
+    return url_for(endpoint, **values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 361, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 354, in url_for
+    force_external=external)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Werkzeug-0.8.3-py2.6.egg/werkzeug/routing.py", line 1607, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('front.index', {}, None)
+2012-11-23 09:15:25,811 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on /account/logout [GET]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/apps/account/views.py", line 18, in logout
+    return redirect(url_for('front.index'))
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 361, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 354, in url_for
+    force_external=external)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Werkzeug-0.8.3-py2.6.egg/werkzeug/routing.py", line 1607, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('front.index', {}, None)
+2012-11-23 09:18:44,750 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on /account/login [GET]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/apps/account/views.py", line 11, in login
+    return render_template('account/login.html')
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 124, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 758, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 719, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 693, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 61, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: account/login.html
+2012-11-23 09:51:26,507 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on /account/login [POST]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/apps/account/views.py", line 21, in login
+    next_url = url_for('front.index')
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 361, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/helpers.py", line 354, in url_for
+    force_external=external)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Werkzeug-0.8.3-py2.6.egg/werkzeug/routing.py", line 1607, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('front.index', {}, None)
+2012-11-23 09:51:44,640 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on /account/login [POST]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1361, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1439, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2012-11-23 10:44:32,507 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on /account/login [POST]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1361, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1439, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2012-11-23 10:46:37,763 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on /account/login [POST]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/apps/account/views.py", line 28, in login
+    return render_template('login.html',form=form)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 894, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/p/base_framework_flask/src/apps/account/templates/login.html", line 5, in top-level template code
+    {{ form.username(size=30) }} {{ render_errors(form.username) }}
+UndefinedError: 'render_errors' is undefined
+2012-11-23 11:28:53,435 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on /account/login [POST]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/apps/account/views.py", line 21, in login
+    user,authed = User.query.authenticate(form.username.data,form.password.data)
+  File "/home/p/base_framework_flask/src/apps/account/models.py", line 28, in authenticate
+    user = self.filter(db.or_(User.username==userName,User.email==userName)).first()
+  File "build/bdist.linux-i686/egg/sqlalchemy/orm/query.py", line 2156, in first
+    ret = list(self[0:1])
+  File "build/bdist.linux-i686/egg/sqlalchemy/orm/query.py", line 2023, in __getitem__
+    return list(res)
+  File "build/bdist.linux-i686/egg/sqlalchemy/orm/query.py", line 2227, in __iter__
+    return self._execute_and_instances(context)
+  File "build/bdist.linux-i686/egg/sqlalchemy/orm/query.py", line 2242, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "build/bdist.linux-i686/egg/sqlalchemy/engine/base.py", line 1449, in execute
+    params)
+  File "build/bdist.linux-i686/egg/sqlalchemy/engine/base.py", line 1584, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "build/bdist.linux-i686/egg/sqlalchemy/engine/base.py", line 1698, in _execute_context
+    context)
+  File "build/bdist.linux-i686/egg/sqlalchemy/engine/base.py", line 1691, in _execute_context
+    context)
+  File "build/bdist.linux-i686/egg/sqlalchemy/engine/default.py", line 331, in do_execute
+    cursor.execute(statement, parameters)
+  File "build/bdist.linux-i686/egg/MySQLdb/cursors.py", line 201, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-i686/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (OperationalError) (1054, "Unknown column 'users.actived' in 'field list'") 'SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password AS users_password, users.website AS users_website, users.role AS users_role, users.token AS users_token, users.created AS users_created, users.city AS users_city, users.description AS users_description, users.actived AS users_actived, users.createtime AS users_createtime, users.last_login AS users_last_login \nFROM users \nWHERE users.username = %s OR users.email = %s \n LIMIT %s' ('dengmin', 'dengmin', 1)
+2012-11-23 12:42:47,101 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/apps/front/views.py", line 11, in index
+    return render_template('index.html',gender='M')
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 894, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/p/base_framework_flask/src/templates/index.html", line 6, in top-level template code
+    {{user.username}}
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 372, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'user' is undefined
+2012-11-23 12:43:04,904 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/apps/front/views.py", line 11, in index
+    return render_template('index.html',gender='M')
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 894, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/p/base_framework_flask/src/templates/index.html", line 6, in top-level template code
+    {{user.username}}
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 372, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'user' is undefined
+2012-11-23 12:44:41,000 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/apps/front/views.py", line 11, in index
+    return render_template('index.html',gender='M')
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 125, in render_template
+    context, ctx.app)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 107, in _render
+    rv = template.render(context)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 894, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/p/base_framework_flask/src/templates/index.html", line 6, in top-level template code
+    {{user.username}}
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 372, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'user' is undefined
+2012-11-23 13:41:06,006 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on /account/login [POST]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/apps/account/views.py", line 25, in login
+    identity_changed.send(current_app._get_current_object(),identity=Identity(user.id))
+  File "build/bdist.linux-i686/egg/blinker/base.py", line 267, in send
+    for receiver in self.receivers_for(sender)]
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask_Principal-0.3.3-py2.6.egg/flask_principal/__init__.py", line 461, in _on_identity_changed
+    self.set_identity(identity)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask_Principal-0.3.3-py2.6.egg/flask_principal/__init__.py", line 413, in set_identity
+    self._set_thread_identity(identity)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask_Principal-0.3.3-py2.6.egg/flask_principal/__init__.py", line 458, in _set_thread_identity
+    identity=identity)
+  File "build/bdist.linux-i686/egg/blinker/base.py", line 267, in send
+    for receiver in self.receivers_for(sender)]
+  File "/home/p/base_framework_flask/src/__init__.py", line 70, in _on_identity_loaded
+    g.user = User.query.from_identity(identity)
+NameError: global name 'User' is not defined
+2012-11-23 14:15:41,670 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on /about [GET]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1253, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1213, in handle_http_exception
+    return handler(e)
+  File "/home/p/base_framework_flask/src/filters.py", line 79, in forbidden
+    return render_template('error/403.html',error=error)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 124, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 758, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 719, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/environment.py", line 693, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Jinja2-2.6-py2.6.egg/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/templating.py", line 61, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: error/403.html
+2012-11-23 14:17:07,433 : ERROR /home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py:1306 log_exception: Exception on /account/login [POST]
+Traceback (most recent call last):
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1687, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1360, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1358, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask-0.9-py2.6.egg/flask/app.py", line 1344, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/p/base_framework_flask/src/apps/account/views.py", line 25, in login
+    identity_changed.send(current_app._get_current_object(),identity=Identity(user.id))
+  File "build/bdist.linux-i686/egg/blinker/base.py", line 267, in send
+    for receiver in self.receivers_for(sender)]
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask_Principal-0.3.3-py2.6.egg/flask_principal/__init__.py", line 461, in _on_identity_changed
+    self.set_identity(identity)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask_Principal-0.3.3-py2.6.egg/flask_principal/__init__.py", line 413, in set_identity
+    self._set_thread_identity(identity)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Flask_Principal-0.3.3-py2.6.egg/flask_principal/__init__.py", line 458, in _set_thread_identity
+    identity=identity)
+  File "build/bdist.linux-i686/egg/blinker/base.py", line 267, in send
+    for receiver in self.receivers_for(sender)]
+  File "/home/p/base_framework_flask/src/__init__.py", line 70, in _on_identity_loaded
+    g.user = User.query.from_identity(identity)
+  File "/home/p/base_framework_flask/src/apps/account/models.py", line 20, in from_identity
+    identity.provides.update(user.provides)
+  File "/home/p/base_framework_flask/env/lib/python2.6/site-packages/Werkzeug-0.8.3-py2.6.egg/werkzeug/utils.py", line 77, in __get__
+    value = self.func(obj)
+  File "/home/p/base_framework_flask/src/apps/account/models.py", line 80, in provides
+    needs = [UserNeed(self.id),loginNeed]
+NameError: global name 'loginNeed' is not defined
